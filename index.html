@@ -2,106 +2,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utica Urban Forest Revitalization Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            color: #003366;
-        }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 2rem;
-        }
-        .tree-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-        .tree-card img {
-            width: 100%;
-            height: auto;
-        }
-        .tree-info {
-            padding: 1rem;
-        }
-        .tree-info h3 {
-            margin-top: 0;
-            color: #003366;
-        }
-        iframe {
-            width: 100%;
-            height: 800px;
-            border: none;
-            margin-top: 2rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #003366;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Utica Urban Forest Revitalization Project</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #f0f4f8; }
+    h1 { color: #2b4c7e; }
+    .tree-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 2rem; }
+    .tree-card { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .tree-card img { max-width: 100%; height: auto; border-radius: 4px; }
+    .tree-card h2 { font-size: 1.2rem; margin: 0.5rem 0; }
+    .tree-card p { margin: 0.25rem 0; }
+    iframe { margin-top: 3rem; width: 100%; height: 700px; border: none; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Utica Urban Forest Revitalization Project</h1>
-    </header>
-    <div class="container">
-        <div class="tree-card">
-            <img src="https://images.unsplash.com/photo-1607439003304-bf409d18b80f?fit=crop&w=1200&q=80" alt="Red Oak Tree">
-            <div class="tree-info">
-                <h3>Red Oak</h3>
-                <p><strong>Height:</strong> 60-75 ft</p>
-                <p><strong>Sun:</strong> Full Sun</p>
-                <p><strong>Growth Rate:</strong> Moderate</p>
-                <p><strong>Benefits:</strong> Excellent shade, supports wildlife</p>
-            </div>
-        </div>
-
-        <div class="tree-card">
-            <img src="https://images.unsplash.com/photo-1637683494569-3021cdde0a4c?fit=crop&w=1200&q=80" alt="Sugar Maple Tree">
-            <div class="tree-info">
-                <h3>Sugar Maple</h3>
-                <p><strong>Height:</strong> 50-70 ft</p>
-                <p><strong>Sun:</strong> Full Sun to Partial Shade</p>
-                <p><strong>Growth Rate:</strong> Slow to Medium</p>
-                <p><strong>Benefits:</strong> Beautiful fall color, iconic NY species</p>
-            </div>
-        </div>
-
-        <div class="tree-card">
-            <img src="https://images.unsplash.com/photo-1616530940355-36dbf6f3a34b?fit=crop&w=1200&q=80" alt="Flowering Dogwood Tree">
-            <div class="tree-info">
-                <h3>Flowering Dogwood</h3>
-                <p><strong>Height:</strong> 20-30 ft</p>
-                <p><strong>Sun:</strong> Partial Shade</p>
-                <p><strong>Growth Rate:</strong> Slow to Medium</p>
-                <p><strong>Benefits:</strong> Ornamental flowers, supports pollinators</p>
-            </div>
-        </div>
-
-        <h2>Request a Tree</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSee1Oy7AIBBg56vvJsWsfEk2X3vd7MZQwFOucBlq5GEd2ZJHw/viewform?embedded=true">Loading…</iframe>
+  <h1>Utica Urban Forest Revitalization Project</h1>
+  <p>Select a tree from the list below that best fits your space and preferences. Once you've made your selection, complete the form at the bottom to request your tree.</p>
+  <div class="tree-grid">
+    <!-- Sample tree card. These would be generated dynamically from spreadsheet data. -->
+    <div class="tree-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Acer_rubrum_leaf.jpg/800px-Acer_rubrum_leaf.jpg" alt="Red Maple">
+      <h2>Red Maple</h2>
+      <p><strong>Height:</strong> 40–70 ft</p>
+      <p>A fast-growing, adaptable tree with beautiful red foliage in autumn.</p>
     </div>
-    <footer>
-        &copy; 2025 City of Utica. All rights reserved.
-    </footer>
+    <div class="tree-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Quercus_rubra_001.jpg/800px-Quercus_rubra_001.jpg" alt="Northern Red Oak">
+      <h2>Northern Red Oak</h2>
+      <p><strong>Height:</strong> 60–75 ft</p>
+      <p>A hardy oak species with vibrant fall color and strong limbs.</p>
+    </div>
+    <div class="tree-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Tilia_cordata.jpg/800px-Tilia_cordata.jpg" alt="Littleleaf Linden">
+      <h2>Littleleaf Linden</h2>
+      <p><strong>Height:</strong> 50–60 ft</p>
+      <p>Attractive pyramid-shaped shade tree with fragrant flowers in summer.</p>
+    </div>
+    <!-- More tree cards would go here... -->
+  </div>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSee1Oy7AIBBg56vvJsWsfEk2X3vd7MZQwFOucBlq5GEd2ZJHw/viewform?embedded=true" loading="lazy">Loading…</iframe>
 </body>
 </html>
